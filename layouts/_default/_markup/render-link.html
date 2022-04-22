@@ -1,0 +1,2 @@
+{{ $url := urls.Parse .Destination }}
+<a href="{{ .Destination | relURL }}" class="link-primary" {{ if .Title }} title="{{ .Title }}" {{ end }} {{ if ne $url.Scheme ""}} target="_blank" {{ end }}>{{ .Text | safeHTML }}{{ if ne $url.Scheme ""}}<i class="fa fa-link"></i>{{ end }}</a>

@@ -1,0 +1,180 @@
+######################## default configuration ####################
+baseURL = "https://orex.github.io/supercell-new/"
+title = "Supercell"
+theme = "godocs-hugo"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# disable language
+disableLanguages = [] # desable language from here
+
+# hugo outputs
+[outputs]
+home = [ "HTML", "JSON"]
+
+#markup
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'monokai'
+    tabWidth = 4
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.parser.attribute]
+  block = true
+  title = true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/search/auto-complete.css"
+[[params.plugins.css]]
+link = "plugins/featherlight/featherlight.min.css"
+[[params.plugins.css]]
+link = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.min.js"
+[[params.plugins.js]]
+link = "plugins/featherlight/featherlight.min.js"
+[[params.plugins.js]]
+link = "plugins/clipboard/clipboard.min.js"
+[[params.plugins.js]]
+link = "plugins/search/lunr.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "https://badge.dimensions.ai/badge.js"
+
+
+# site variables
+[params.variables]
+# Color Variables
+primary_color = "#FF0043"
+text_color = "#333"
+text_color_dark = "#222"
+text_color_light = "#999"
+body_color = "#fff"
+border_color = "#E2E2E2"
+black = "#000"
+white = "#fff"
+light = "#FBFBFB"
+
+# Font Variables
+primary_font = "Roboto:wght@300;400;500;600;700;800"
+primary_font_type = "sans-serif" # [serif/sans-serif]
+secondary_font = ""
+secondary_font_type = "serif" # [serif/sans-serif]
+icon_font = "Font Awesome 5 Free"
+
+#################### default parameters ################################
+[params]
+#logo = "images/logo.png"
+favicon = "images/favicon.png"
+# Meta data
+description = "Supercell program for disorder system calculations."
+author = "Kirill Okhotnikov"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+#[[params.nav_button]]
+#style = "outline" # available style: solid, outline
+#label = "changelog"
+#link = "changelog"
+
+[[params.nav_button]]
+style = "outline" # available style: solid, outline
+label = "Download"
+link = "download"
+
+  
+############################# social site ########################
+[[params.social]]
+title = "github"
+icon = "fab fa-github" # fontawesome icon : https://fontawesome.com/icons
+link = "https://github.com/orex/"
+
+[[params.social]]
+title = "linkedin"
+icon = "fab fa-linkedin" # fontawesome icon : https://fontawesome.com/icons
+link = "https://www.linkedin.com/in/kirill-okhotnikov/"
+
+[[params.social]]
+title = "orcid"
+icon = "fab fa-orcid" # fontawesome icon : https://fontawesome.com/icons
+link = "https://orcid.org/0000-0003-2029-9057"
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+# copyright
+copyright = "Supercell by Kirill Okhotnikov"
+
+# banner
+[Languages.en.banner]
+title = "Supercell program"
+subtitle = "version 2.x"
+description = "a combinatorial structure-generation approach for the local-level modeling of atomic substitutions and partial occupancies in crystals."
+image_jpg = "images/supercell-bg.jpg"
+image_webp = "images/supercell-bg.webp"
+
+############## English navigation ###############
+# main menu
+[[Languages.en.menu.main]]
+name = "Docs"
+url = "/docs"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "Github"
+pre = "<i class='fab fa-github'></i>"
+url = "https://github.com/orex/supercell"
+weight = 4
+
+# footer menu
+[[Languages.en.menu.footer]]
+name = "Changelog"
+url = "changelog"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "Contact"
+url = "contact"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "Github"
+url = "https://github.com/orex/"
+weight = 3

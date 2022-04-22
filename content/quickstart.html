@@ -1,0 +1,25 @@
+---
+title: Quickstart
+_build:
+  render: never
+  list: never
+---
+
+{{< highlight bash >}}
+ # Download program itself
+ wget https://orex.github.io/supercell/exe/supercell-linux.tar.gz
+ 
+ # and unzip it
+ tar -xvf supercell-linux.tar.gz
+ 
+ # Download example
+ https://raw.githubusercontent.com/orex/supercell/master/data/examples/Ca2Al2SiO7/Ca2Al2SiO7.cif
+ 
+ # Run the program
+ ./supercell -i Ca2Al2SiO7.cif -m -v 2 -s 1x1x2 -o cell1x1x2
+ 
+ # <--- and you will get 10 structures, represented
+ # <--- in the animation on the left side
+{{< / highlight >}}
+
+
