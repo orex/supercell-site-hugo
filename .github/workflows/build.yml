@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: 'Building...'
-      uses: orex/hugo-deploy@v1
+      uses: orex/hugo-deploy@master
       env:
         DEPLOY_REPO: orex/orex.github.io
         DEPLOY_BRANCH: master
