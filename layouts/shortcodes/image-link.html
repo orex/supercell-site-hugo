@@ -1,1 +1,1 @@
-<a class="btn btn-outline-primary btn-lg" href="{{ .Get "link" }}"><img src="{{ .Get "img" }}" alt="{{ .Get "caption" }}"><br>{{ .Get "caption"}}</a>
+<a class="btn btn-outline-primary btn-lg" href="{{ .Get "link" | relURL }}"><img src="{{ .Get "img" | relURL }}" alt="{{ .Get "caption" }}"><br>{{ .Get "caption"}}</a>
