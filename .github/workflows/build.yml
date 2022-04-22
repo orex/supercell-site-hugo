@@ -1,0 +1,20 @@
+name: build-site
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Building...'
+      uses: orex/hugo-deploy@v1
+      env:
+        DEPLOY_REPO: orex/orex.github.io
+        DEPLOY_BRANCH: master
+        DEPLOY_DEST_DIR: supercell-new
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        TZ: UTC
