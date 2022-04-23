@@ -17,6 +17,6 @@ jobs:
       env:
         DEPLOY_REPO: orex/orex.github.io
         DEPLOY_BRANCH: master
-        DEPLOY_DEST_DIR: supercell-new
+        DEPLOY_DEST_DIR: supercell
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         TZ: UTC

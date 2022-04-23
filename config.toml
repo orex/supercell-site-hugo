@@ -1,9 +1,9 @@
 ######################## default configuration ####################
-baseURL = "https://orex.github.io/supercell-new/"
+baseURL = "https://orex.github.io/supercell/"
 title = "Supercell"
 theme = "godocs-hugo"
 # google analytics
-googleAnalytics = "" # example : UA-123-45
+googleAnalytics = "UA-104749334-1" # example : UA-123-45
 # disable language
 disableLanguages = [] # desable language from here
 
@@ -166,12 +166,12 @@ weight = 4
 # footer menu
 [[Languages.en.menu.footer]]
 name = "Changelog"
-url = "changelog"
+url = "https://github.com/orex/supercell/commits/master"
 weight = 1
 
 [[Languages.en.menu.footer]]
 name = "Contact"
-url = "contact"
+url = "mailto:kirill.okhotnikov@gmail.com"
 weight = 2
 
 [[Languages.en.menu.footer]]

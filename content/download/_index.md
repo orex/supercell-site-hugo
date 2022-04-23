@@ -16,9 +16,9 @@ card:
 
 The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. Previous major version (unsupported) of *supercell* v1.2 is available [here](https://github.com/orex/supercell/tree/gh-pages/v1.2)
 
-{{< image-link link="https://orex.github.io/supercell/exe/supercell-linux.tar.gz" img="https://orex.github.io/supercell/images/Linux64x64.png" caption="Linux 64bit" >}}
-{{< image-link link="https://orex.github.io/supercell/exe/supercell-osx.tar.gz" img="https://orex.github.io/supercell/images/mac64x64.png" caption="OSX" >}}
-{{< image-link link="https://orex.github.io/supercell/exe/supercell-windows.zip" img="https://orex.github.io/supercell/images/Windows64x64.png" caption="Windows x64" >}}
+{{< image-link link="external/exe/supercell-linux.tar.gz" img="/images/Linux64x64.png" caption="Linux 64bit" >}}
+{{< image-link link="external/exe/supercell-osx.tar.gz" img="/images/mac64x64.png" caption="OSX" >}}
+{{< image-link link="external/exe/supercell-windows.zip" img="/images/Windows64x64.png" caption="Windows x64" >}}
 
 ### Source code
 

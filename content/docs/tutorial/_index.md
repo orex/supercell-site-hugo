@@ -4,4 +4,4 @@ type : "docs"
 weight: 2
 ---
 
-Download tutorial in [PDF format](/supercell/docs/supercell_tutorial.pdf)
+Download tutorial in [PDF format](/external/doc/supercell_tutorial.pdf)
