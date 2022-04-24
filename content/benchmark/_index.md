@@ -13,9 +13,9 @@ card:
 
 #### Results
 
-The same benchmark as in supercell paper (the same as fcc in disorder paper). Time in seconds. "Binaries" are compiled program which is available on this site, "native" program was built to run optimally on the test machine.
+The same benchmark as in supercell paper (the same as fcc in disorder paper). Time in seconds. "Binaries" refers to results obtained by execution of the binaries downloaded from this site. "Native" program refers to results obtained by execution of program which was compiled on the same machine and in the same environment.
 
-The tests were run ones each on such configuration:
+The tests were run ones for each of such configurations:
 
 *   KVM Intel® Xeon® 3.1 GHz (8 cores).
 *   Ubuntu 20.04 LTS
@@ -51,7 +51,7 @@ The tests were run ones each on such configuration:
   </table>
 </div>
 
-Compiled v1.2 shows slower performance due to compatibility with very old platforms. Surprisingly slower performance of "native" binaries with 8 cores can be most probably explained by previous version of TBB library from Ubuntu repository, which was used for compiling the code.
+Binary v1.2 shows slower performance due to compatibility with very old platforms. Surprisingly slower performance of "native" binaries with 8 cores can be most probably explained by previous version of TBB library from Ubuntu repository, which was used for compiling the code.
 
 #### Recommendations
 

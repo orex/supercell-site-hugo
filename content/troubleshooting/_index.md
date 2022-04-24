@@ -19,7 +19,7 @@ If you have a problem with supercell program, please read *"What to do if superc
 * Check program on provided examples.
 * Troubleshoot problems by the algorithm provided.
 * Look through existing issues.
-* If you decided to write an issue on [github](https://github.com/orex/supercell/issues), be as verbose as possible.
+* If you decide to write an issue on [github](https://github.com/orex/supercell/issues), please be as verbose as possible.
 
 
 

@@ -4,7 +4,7 @@ type: "docs"
 draft: false
 card:
   order: 7
-  description: 'List of publication which uses/cite the program. <span class="text-center __dimensions_badge_embed__" data-doi="10.1186/s13321-016-0129-3" data-style="small_rectangle"></span>'
+  description: 'List of publication which use/cite the program. <span class="text-center __dimensions_badge_embed__" data-doi="10.1186/s13321-016-0129-3" data-style="small_rectangle"></span>'
   btncaption: "See papers"
   btnicon: "far fa-file-alt"
   highlighted: false
