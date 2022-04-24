@@ -14,16 +14,34 @@ card:
 
 ### Compiled binaries
 
-The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. Previous major version (unsupported) of *supercell* v1.2 is available [here](https://github.com/orex/supercell/tree/gh-pages/v1.2)
+The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. Previous major version (currently unsupported) of *supercell* v1.2 is available [here](https://github.com/orex/supercell/tree/gh-pages/v1.2)
 
-{{< image-link link="external/exe/supercell-linux.tar.gz" img="/images/Linux64x64.png" caption="Linux 64bit" >}}
-{{< image-link link="external/exe/supercell-osx.tar.gz" img="/images/mac64x64.png" caption="OSX" >}}
+{{< image-link link="external/exe/supercell-linux.tar.gz" img="/images/Linux64x64.png" caption="Linux x86_64" >}}
+{{< image-link link="external/exe/supercell-osx.tar.gz" img="/images/mac64x64.png" caption="OSX Intel" >}}
 {{< image-link link="external/exe/supercell-windows.zip" img="/images/Windows64x64.png" caption="Windows x64" >}}
+{{< image-link link="external/exe/supercell-linux-arm64.tar.gz" img="/images/Linux64x64-ARM.png" caption="Linux ARM64" >}}
+
+Please note that the last link to Linux ARM64 architecture. The support is in **beta** stage.
+
+### Snap store (Linux)
+
+Another very modern option is to install program via snap. Availabe both for Intel/AMD and ARM (experimental) architectures.
+
+<a href="https://snapcraft.io/supercell">
+  <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
+  <p></p>
+</a>
+
+This available for almost all modern Linux distribution and as easy as click on the link above (Web UI) or write a command in terminal:
+
+```
+sudo snap install supercell
+```
+
+### Repository (ArchLinux)
+
+Old version of the program is available in ArchLinux [repository](https://aur.archlinux.org/packages/supercell-git).
 
 ### Source code
 
 You can also compile the program from [source code](https://github.com/orex/supercell/). To do so, you should have a knowledge of *git* and *cmake*. Please check file [.travis.yml](https://github.com/orex/supercell/blob/master/.travis.yml) for relevant commands. Compiling under Linux, OSX and FreeBSD should be relatively easy, but compiling on Windows you should be done from scratch.
-
-### Other sources
-
-Old version of the program is available in ArchLinux [repository](https://aur.archlinux.org/packages/supercell-git). I have a plan to make the program available via [snap](https://snapcraft.io).
