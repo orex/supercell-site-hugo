@@ -32,7 +32,13 @@ unsafe = true
 [markup.goldmark.parser.attribute]
   block = true
   title = true
+  
+############################# Minify ##############################
 
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.js]
+      noNullishOperator = true      
 ############################# Plugins ##############################
 
 # CSS Plugins
