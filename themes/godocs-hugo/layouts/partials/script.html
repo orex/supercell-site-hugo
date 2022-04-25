@@ -22,7 +22,7 @@
       families: ['{{$pf}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{.}}&display=swap'{{end}}],
       version: 2
     },
-    active: () => {
+    active: function() {
       sessionStorage.fontsLoaded = true
     }
   });
@@ -38,7 +38,7 @@
 {{ end }}
 {{ end }}
 {{ $scripts := $scripts | append (resources.Get "js/script.js" | minify) }}
-{{ $scripts := $scripts | resources.Concat "/js/script.js" | minify | fingerprint "sha512" }}
+{{ $scripts := $scripts | resources.Concat "/js/script.js" | fingerprint "sha512" }}
 <script src={{$scripts.RelPermalink}} crossorigin="anonymous" defer="defer" data-turbolinks-suppress-warning integrity="{{ $scripts.Data.Integrity }}" type="application/javascript"></script>
 
 <!-- cookie -->
