@@ -1,7 +1,9 @@
 ---
 title: "Mostly Asked Questions"
+date: 2022-04-12T11:11:11+06:00
 type: "docs"
 draft: false
+weight: 50
 ---
 
 ### Does supercell program can help me in my research?

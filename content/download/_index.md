@@ -1,9 +1,9 @@
 ---
 title: "Download and install"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-04-12T11:11:11+06:00
 icon: "fas fa-download"
 type: "docs"
-weight: 3
+weight: 30
 card:
   order: 2
   description: "Using supercell is as easy as one-two-three. Check the to learn different methods of obtaining and using the program."

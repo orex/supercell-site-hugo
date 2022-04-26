@@ -1,7 +1,9 @@
 ---
 title: "Troubleshooting"
+date: 2022-04-12T11:11:11+06:00
 type: "docs"
 draft: false
+weight: 60
 card:
   order: 8
   description: "If you have a problem with supercell program, please check a piece of advice here."

@@ -1,7 +1,9 @@
 ---
 title: "Useful links"
+date: 2022-04-12T11:11:11+06:00
 type: "docs"
 draft: false
+weight: 90
 ---
 
 I recommend to use the projects below to integrate *supercell* program into research process. Some examples of combined approach you can find in [tutorial](/docs/tutorial).

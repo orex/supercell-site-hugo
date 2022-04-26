@@ -1,10 +1,11 @@
 ---
 title: "News"
+date: 2022-04-12T11:11:11+06:00
 draft: false
 icon: "far fa-newspaper"
 type: "docs"
 card: false
-weight: 1
+weight: 10
 ---
 
 #### 02-01-2022 

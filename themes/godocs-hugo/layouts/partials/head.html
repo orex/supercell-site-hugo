@@ -29,5 +29,23 @@
 <!-- Favicon -->
 <link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
 
-<!-- google analytics -->
+<!-- google analytics additions -->
+{{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
+{{- if not $pc.Disable -}}
+<script type="application/javascript">
+{{ template "__ga_js_set_doNotTrack" $ }}
+if (!doNotTrack) {
+  ga('require', 'outboundLinkTracker', {
+    shouldTrackOutboundLink: function(link, parseUrl) {
+      return true;
+    },
+    events: ['click', 'auxclick', 'contextmenu']
+  });
+  ga('require', 'urlChangeTracker');
+  ga('require', 'pageVisibilityTracker');
+}
+</script>
 {{ template "_internal/google_analytics_async.html" . }}
+{{ $autotrack := resources.Get "js/autotrack.js" | fingerprint "sha512" }}
+<script async src={{$autotrack.RelPermalink}} integrity="{{ $autotrack.Data.Integrity }}" type="application/javascript"></script>
+{{- end -}}

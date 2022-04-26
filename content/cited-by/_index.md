@@ -1,7 +1,9 @@
 ---
 title: "Publication list"
+date: 2022-04-12T11:11:11+06:00
 type: "docs"
 draft: false
+weight: 80
 card:
   order: 7
   description: 'List of publication which use/cite the program. <span class="text-center __dimensions_badge_embed__" data-doi="10.1186/s13321-016-0129-3" data-style="small_rectangle"></span>'

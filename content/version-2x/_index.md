@@ -1,8 +1,8 @@
 ---
 title: "Whats new 2.x"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-04-12T11:11:11+06:00
 type: "docs"
-weight: 2
+weight: 20
 card:
   order: 1
   description: "Supercell 2.x is a major supercell release with significant performance boost, multithreading support and code imporvment and refactoring."
