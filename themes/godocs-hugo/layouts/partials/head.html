@@ -29,23 +29,41 @@
 <!-- Favicon -->
 <link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
 
-<!-- google analytics additions -->
 {{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
 {{- if not $pc.Disable -}}
+{{ with .Site.GoogleAnalytics }}
 <script type="application/javascript">
 {{ template "__ga_js_set_doNotTrack" $ }}
 if (!doNotTrack) {
-  ga('require', 'outboundLinkTracker', {
-    shouldTrackOutboundLink: function(link, parseUrl) {
-      return true;
-    },
-    events: ['click', 'auxclick', 'contextmenu']
-  });
-  ga('require', 'urlChangeTracker');
-  ga('require', 'pageVisibilityTracker');
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        {{- if $pc.UseSessionStorage }}
+        if (window.sessionStorage) {
+                var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+                ga('create', '{{ . }}', {
+            'storage': 'none',
+            'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+           });
+           ga(function(tracker) {
+            sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+           });
+   }
+        {{ else }}
+        ga('create', '{{ . }}', 'auto');
+        {{ end -}}
+        {{ if $pc.AnonymizeIP }}ga('set', 'anonymizeIp', true);{{ end }}
+        ga('send', 'pageview');
+        ga('require', 'outboundLinkTracker', {
+            shouldTrackOutboundLink: function(link, parseUrl) {
+            return true;
+          },
+          events: ['click', 'auxclick', 'contextmenu']
+        });
+        ga('require', 'urlChangeTracker');
+        ga('require', 'pageVisibilityTracker');
 }
 </script>
-{{ template "_internal/google_analytics_async.html" . }}
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 {{ $autotrack := resources.Get "js/autotrack.js" | fingerprint "sha512" }}
 <script async src={{$autotrack.RelPermalink}} integrity="{{ $autotrack.Data.Integrity }}" type="application/javascript"></script>
+{{ end }}
 {{- end -}}
