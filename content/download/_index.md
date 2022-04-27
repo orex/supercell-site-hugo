@@ -25,7 +25,7 @@ Please note that the last link is to Linux ARM64 architecture. The support is in
 
 ### Snap store (Linux)
 
-Another very modern option is to install program via snap. Availabe both for Intel/AMD and ARM (experimental) architectures.
+Another very modern option is to install program via snap. Available both for Intel/AMD and ARM (experimental) architectures.
 
 <a href="https://snapcraft.io/supercell">
   <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
@@ -37,6 +37,8 @@ This is available for almost all modern Linux distribution and is as easy as to 
 ```
 sudo snap install supercell
 ```
+
+Be careful, *snap* is a very secure way of installing programs. Therefore, you can get a permission error in case of running the program outside your home folder.
 
 ### Repository (ArchLinux)
 

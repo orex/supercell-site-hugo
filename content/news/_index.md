@@ -12,7 +12,7 @@ weight: 10
 **Supercell v2.0.2 (minor bugfix)** Symmetry search in very sheared cells is improved. Gemmi and xxHash updated.
 
 #### 20-05-2021 
-**Supercell v2.0** A new version of supercell program with major improvements: performance, portability and new parameters. Please check changelog and benchmark.
+**Supercell v2.0** A new version of supercell program with major improvements: performance, portability and new parameters. Please check [changelog](/version-2x) and [benchmark](/benchmark).
 <!--more-->
 #### 23-05-2019
 **Supercell v1.2 (performance increase)** The new version of supercell program is around 4 times faster, than the previous one!
