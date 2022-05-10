@@ -6,11 +6,11 @@ _build:
 ---
 
 {{< highlight bash >}}
- # Download program itself
- wget https://orex.github.io/supercell/exe/supercell-linux.tar.gz
+ # Create new folder and go to it
+ mkdir supercell-start && cd supercell-start
  
- # and unzip it
- tar -xvf supercell-linux.tar.gz
+ # Download program itself and unzip it (files: supercell, README)
+ wget https://orex.github.io/supercell/external/exe/supercell-linux.tar.gz -O - | tar -xzvf -
  
  # Download example
  https://raw.githubusercontent.com/orex/supercell/master/data/examples/Ca2Al2SiO7/Ca2Al2SiO7.cif
@@ -21,5 +21,3 @@ _build:
  # <--- and you will get 10 structures, represented
  # <--- in the animation on the left side
 {{< / highlight >}}
-
-

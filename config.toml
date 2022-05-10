@@ -44,8 +44,8 @@ unsafe = true
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-link = "plugins/search/auto-complete.css"
+#[[params.plugins.css]]
+#link = "plugins/search/auto-complete.css"
 [[params.plugins.css]]
 link = "plugins/featherlight/featherlight.min.css"
 [[params.plugins.css]]
@@ -60,14 +60,14 @@ link = "plugins/bootstrap/bootstrap.min.js"
 link = "plugins/masonry/masonry.min.js"
 [[params.plugins.js]]
 link = "plugins/featherlight/featherlight.min.js"
-[[params.plugins.js]]
-link = "plugins/clipboard/clipboard.min.js"
-[[params.plugins.js]]
-link = "plugins/search/lunr.min.js"
-[[params.plugins.js]]
-link = "plugins/search/fuse.min.js"
-[[params.plugins.js]]
-link = "plugins/search/mark.js"
+#[[params.plugins.js]]
+#link = "plugins/clipboard/clipboard.min.js"
+#[[params.plugins.js]]
+#link = "plugins/search/lunr.min.js"
+#[[params.plugins.js]]
+#link = "plugins/search/fuse.min.js"
+#[[params.plugins.js]]
+#link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "https://badge.dimensions.ai/badge.js"
 
@@ -94,7 +94,7 @@ icon_font = "Font Awesome 5 Free"
 
 #################### default parameters ################################
 [params]
-#logo = "images/logo.png"
+logo = "images/logo.png"
 favicon = "images/favicon.png"
 # Meta data
 description = "Supercell program for disorder system calculations."
