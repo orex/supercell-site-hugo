@@ -6,10 +6,13 @@
       <div class="container">
       <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
         {{ if .Site.Params.logo }}
-        <img loading="lazy" class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
+          {{ with resources.Get $.Site.Params.logo }}
+            <img loading="lazy" class="img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+          {{ end }}
         {{ else }}
-        {{ .Site.Title }}
-        {{ end }}</a>
+          {{ .Site.Title }}
+        {{ end }}
+        </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="fas fa-bars text-light"></i>
       </button>
