@@ -5,7 +5,7 @@ type: "docs"
 weight: 20
 card:
   order: 1
-  description: "Supercell 2.x is a major supercell release with significant performance boost, multithreading support and code imporvment and refactoring."
+  description: "Supercell 2.x is a major supercell release with significant performance boost, multithreading support and code improvement and refactoring."
   btncaption: "Read more"
   btnicon: "far fa-arrow-alt-circle-up"
   highlighted: false

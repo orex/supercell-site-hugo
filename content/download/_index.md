@@ -14,14 +14,13 @@ card:
 
 ### Compiled binaries
 
-The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. The previous major version (currently unsupported) of *supercell* v1.2 is available [here](https://github.com/orex/supercell/tree/gh-pages/v1.2)
+The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. The previous versions (v1.2 and v2.0.2 unsupported) of *supercell* is available in [archive](download/archive)
 
-{{< image-link link="external/exe/supercell-linux.tar.gz" img="/images/Linux64x64.png" caption="Linux x86_64" >}}
-{{< image-link link="external/exe/supercell-osx.tar.gz" img="/images/mac64x64.png" caption="OSX Intel" >}}
-{{< image-link link="external/exe/supercell-windows.zip" img="/images/Windows64x64.png" caption="Windows x64" >}}
-{{< image-link link="external/exe/supercell-linux-arm64.tar.gz" img="/images/Linux64x64-ARM.png" caption="Linux ARM64" >}}
+{{< image-link link="external/exe/supercell-linux.tar.gz" img="images/Linux64x64.png" caption="Linux x86_64" >}}
+{{< image-link link="external/exe/supercell-osx.tar.gz" img="images/mac64x64.png" caption="OSX Intel" >}}
+{{< image-link link="external/exe/supercell-windows.zip" img="images/Windows64x64.png" caption="Windows x64" >}}
 
-Please note that the last link is to Linux ARM64 architecture. The support is in **beta** stage.
+Please note that the Linux ARM64 architecture for this version is supported only via snap (see below). The support is in **beta** stage.
 
 ### Snap store (Linux)
 
@@ -42,8 +41,8 @@ Be careful, *snap* is a very secure way of installing programs. Therefore, you c
 
 ### Repository (ArchLinux)
 
-Old version of the program is available in ArchLinux [repository](https://aur.archlinux.org/packages/supercell-git).
+Old version of the program (v1.2) is available in ArchLinux [repository](https://aur.archlinux.org/packages/supercell-git).
 
 ### Source code
 
-You can also compile the program from [source code](https://github.com/orex/supercell/). To do so, you should have knowledge of *git* and *cmake*. Please check file [.travis.yml](https://github.com/orex/supercell/blob/master/.travis.yml) for relevant commands. Compiling under Linux, OSX and FreeBSD should be relatively easy, but compiling on Windows should be done from scratch.
+You can also compile the program from [source code](https://github.com/orex/supercell/). To do so, you should have knowledge of *git* and *cmake*. Please check github actions file [supercell-cicd.yml](https://github.com/orex/supercell/blob/master/.github/workflows/supercell-cicd.yml) for relevant commands. Please use latest version of OneAPI-tbb for the best performance. Compiling under Linux, OSX and FreeBSD should be relatively easy, but compiling on Windows should be done from scratch.

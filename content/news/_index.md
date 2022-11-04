@@ -8,6 +8,8 @@ card: false
 weight: 10
 ---
 
+#### 03-11-2022 
+**Supercell v2.1.0** A new version of supercell program released with improvement of electrostatic calculation precision and performance. New multi-threading approach allows effectively parallelize program up to 64 threads. Please check [benchmark](/benchmark) for relevant information and download program [here](/download).
 #### 10-05-2022 
 **New supercell site and packages** Welcome to the new supercell site: a lot of useful information added. The program itself now is available via [snap](https://snapcraft.io/) and for Linux ARM environment. See [download](/download).
 #### 02-01-2022 
