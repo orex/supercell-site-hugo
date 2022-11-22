@@ -5,4 +5,4 @@ type : "docs"
 weight: 43
 ---
 
-Download tutorial in [PDF format](/external/doc/supercell_tutorial.pdf)
+Download tutorial in [PDF format](external/doc/supercell_tutorial.pdf)

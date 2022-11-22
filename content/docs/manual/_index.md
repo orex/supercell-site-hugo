@@ -6,4 +6,4 @@ type : "docs"
 weight: 46
 ---
 
-Download manual in [PDF format](/external/doc/supercell_man.pdf)
+Download manual in [PDF format](external/doc/supercell_man.pdf)
