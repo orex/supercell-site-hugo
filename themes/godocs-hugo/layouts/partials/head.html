@@ -4,7 +4,7 @@
 <meta name="author" content="{{ site.Params.author }}">
 <meta name="description" content="{{ with .Params.description }}{{.}}{{else}}{{ with site.Params.description }}{{.}}{{end}}{{end}}">
 
-<!-- mobile responsive meta -->
+{{ "<!-- mobile responsive meta -->" | safeHTML}}
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
 <!-- DNS preconnect -->
@@ -23,44 +23,8 @@
 <link rel="dns-prefetch" href="//www.google-analytics.com">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
-<!-- Favicon -->
+{{ "<!-- Favicon -->" | safeHTML}}
 <link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
 
-{{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
-{{- if not $pc.Disable -}}
-{{ with .Site.GoogleAnalytics }}
-<script type="application/javascript">
-{{ template "__ga_js_set_doNotTrack" $ }}
-if (!doNotTrack) {
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        {{- if $pc.UseSessionStorage }}
-        if (window.sessionStorage) {
-                var GA_SESSION_STORAGE_KEY = 'ga:clientId';
-                ga('create', '{{ . }}', {
-            'storage': 'none',
-            'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
-           });
-           ga(function(tracker) {
-            sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
-           });
-   }
-        {{ else }}
-        ga('create', '{{ . }}', 'auto');
-        {{ end -}}
-        {{ if $pc.AnonymizeIP }}ga('set', 'anonymizeIp', true);{{ end }}
-        ga('send', 'pageview');
-        ga('require', 'outboundLinkTracker', {
-            shouldTrackOutboundLink: function(link, parseUrl) {
-            return true;
-          },
-          events: ['click', 'auxclick', 'contextmenu']
-        });
-        ga('require', 'urlChangeTracker');
-        ga('require', 'pageVisibilityTracker');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-{{ $autotrack := resources.Get "js/autotrack.js" | fingerprint "sha512" }}
-<script async src={{$autotrack.RelPermalink}} integrity="{{ $autotrack.Data.Integrity }}" type="application/javascript"></script>
-{{ end }}
-{{- end -}}
+<!-- google analytics -->
+{{ template "_internal/google_analytics.html" . }}

@@ -14,7 +14,7 @@ card:
 
 ### Compiled binaries
 
-The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. The previous versions (v1.2 and v2.0.2 unsupported) of *supercell* is available in [archive](download/archive)
+The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. The previous versions (unsupported) of *supercell* is available in [archive](download/archive)
 
 {{< image-link link="external/exe/supercell-linux.tar.gz" img="images/Linux64x64.png" caption="Linux x86_64" >}}
 {{< image-link link="external/exe/supercell-osx.tar.gz" img="images/mac64x64.png" caption="OSX Intel" >}}

@@ -8,13 +8,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: 
+    environment:
       name: build-site
       url: https://github.com
     steps:
     - name: 'Building...'
       uses: orex/hugo-deploy@master
       env:
+        HUGO_VERSION: 0.131.0
         DEPLOY_REPO: orex/orex.github.io
         DEPLOY_BRANCH: master
         DEPLOY_DEST_DIR: supercell

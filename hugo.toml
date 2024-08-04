@@ -2,10 +2,9 @@
 baseURL = "https://orex.github.io/supercell/"
 title = "Supercell"
 theme = "godocs-hugo"
-# google analytics
-googleAnalytics = "UA-104749334-1" # example : UA-123-45
 # disable language
 disableLanguages = [] # desable language from here
+
 
 # hugo outputs
 [outputs]
@@ -39,6 +38,8 @@ unsafe = true
   [minify.tdewolff]
     [minify.tdewolff.js]
       noNullishOperator = true      
+
+      
 ############################# Plugins ##############################
 
 # CSS Plugins
@@ -70,6 +71,8 @@ link = "plugins/featherlight/featherlight.min.js"
 #link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "https://badge.dimensions.ai/badge.js"
+[[params.plugins.js]]
+link = "plugins/cookie-cons/cookie.js"
 
 
 # site variables
@@ -118,6 +121,11 @@ style = "outline" # available style: solid, outline
 label = "Download"
 link = "download"
 
+[params.cookies]
+enable = true
+expire_days = 30
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
   
 ############################# social site ########################
 [[params.social]]
@@ -145,7 +153,7 @@ weight = 1
 copyright = "Supercell by Kirill Okhotnikov"
 
 # banner
-[Languages.en.banner]
+[Languages.en.params.banner]
 title = "Supercell program"
 subtitle = "version 2.x"
 description = "a combinatorial structure-generation approach for the local-level modeling of atomic substitutions and partial occupancies in crystals."
@@ -181,10 +189,13 @@ name = "Github"
 url = "https://github.com/orex/"
 weight = 3
 
+[services]
+  [services.googleAnalytics]
+    id = 'G-XJ1ZFEDCR7'
 
 ################################### Privacy #####################################
 
 [privacy]
   [privacy.googleAnalytics]
-    respectDoNotTrack = true
-    useSessionStorage = true
+    disable = false
+    respectDoNotTrack = false
