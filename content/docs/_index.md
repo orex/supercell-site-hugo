@@ -5,7 +5,7 @@ type : "docs"
 weight: 40
 card:
   order: 5
-  description: "Tutorial is a handbook for supercell user. All features of supercell are illistrated by examples, which are sorted by complexity. Manual describes all commands in CLI."
+  description: "The Tutorial is a handbook for supercell users. All features of supercell are illustrated by examples, which are sorted by complexity. The Manual describes all commands in the CLI."
   btncaption: "Start learning"
   btnicon: "fas fa-book-reader"
   highlighted: true

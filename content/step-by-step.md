@@ -12,7 +12,7 @@ Check supercell paper to obtain overall idea about the program and its applicati
 {{</ sbs >}}
 
 {{< sbs title="Install the program" step=3 time="5-10 min" link="download" >}}
-Get the program. Use the easiest option with compiled binaries for you OS. Linux is recommended. 
+Get the program. Use the easiest option with compiled binaries for your OS. Linux is recommended.
 {{</ sbs >}}
 
 {{< sbs title="Try the program" step=4 time="10-30 min" link="docs/tutorial" >}}

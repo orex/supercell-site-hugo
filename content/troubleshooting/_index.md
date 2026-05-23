@@ -12,7 +12,7 @@ card:
   highlighted: true
 ---
 
-If you have a problem with supercell program, please read *"What to do if supercell program is not working?"* section in tutorial. In brief it can be summarized to:
+If you have a problem with supercell program, please read the *"What to do if supercell program is not working?"* section in the tutorial. In brief, it can be summarized as:
 * Use "good practices" when working with supercell program. Some of them are:
   - Check carefully input and output.
   - Be careful with spacegroups notations.

@@ -6,7 +6,7 @@ type: "docs"
 weight: 30
 card:
   order: 2
-  description: "Using supercell is as easy as one-two-three. Check the to learn different methods of obtaining and using the program."
+  description: "Using supercell is as easy as one-two-three. Check this page to learn different methods of obtaining and using the program."
   btncaption: "Download"
   btnicon: "fas fa-download"
   highlighted: true
@@ -14,24 +14,26 @@ card:
 
 ### Compiled binaries
 
-The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. The previous versions (unsupported) of *supercell* is available in [archive](download/archive)
+The easiest way to obtain the program is to download compiled binaries for Linux, Mac and Windows platforms. Just download the archive, unpack it and follow the instruction inside. You don't need to install the binaries, therefore you can use it without a root permission. The latest binaries (currently **v2.1.2**) are published on [GitHub Releases](https://github.com/orex/supercell/releases/latest). The previous versions (unsupported) of *supercell* are available in [archive](download/archive).
 
-{{< image-link link="external/exe/supercell-linux.tar.gz" img="images/Linux64x64.png" caption="Linux x86_64" >}}
-{{< image-link link="external/exe/supercell-osx.tar.gz" img="images/mac64x64.png" caption="OSX Intel" >}}
-{{< image-link link="external/exe/supercell-windows.zip" img="images/Windows64x64.png" caption="Windows x64" >}}
+{{< image-link link="https://github.com/orex/supercell/releases/download/v2.1.2/supercell-linux.tar.gz" img="images/Linux64x64.png" caption="Linux x86_64" >}}
+{{< image-link link="https://github.com/orex/supercell/releases/download/v2.1.2/supercell-linux-arm64.tar.gz" img="images/Linux64x64-ARM.png" caption="Linux ARM64 (Ubuntu)" >}}
+{{< image-link link="https://github.com/orex/supercell/releases/download/v2.1.2/supercell-osx-intel.tar.gz" img="images/mac64x64.png" caption="macOS Intel" >}}
+{{< image-link link="https://github.com/orex/supercell/releases/download/v2.1.2/supercell-osx.tar.gz" img="images/mac64x64-ARM.png" caption="macOS Apple Silicon" >}}
+{{< image-link link="https://github.com/orex/supercell/releases/download/v2.1.2/supercell-windows.zip" img="images/Windows64x64.png" caption="Windows x64" >}}
 
-Please note that the Linux ARM64 architecture for this version is supported only via snap (see below). The support is in **beta** stage.
+The x86_64 Linux binary targets AVX-capable CPUs (any x86_64 from 2011 onward) and links against glibc no newer than 2.28, so it runs on Ubuntu 18.04+, Debian 10+, RHEL 8+, openSUSE Leap 15.x+ and other distributions of similar vintage. Linux ARM64 binaries are now available directly (no longer beta-only via snap).
 
 ### Snap store (Linux)
 
-Another very modern option is to install program via snap. Available both for Intel/AMD and ARM (experimental) architectures.
+Another modern option is to install the program via snap. Available both for Intel/AMD and ARM (experimental) architectures.
 
 <a href="https://snapcraft.io/supercell">
   <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
   <p></p>
 </a>
 
-This is available for almost all modern Linux distribution and is as easy as to click on the link above (Web UI) or to write the command in terminal:
+This is available for almost all modern Linux distributions and is as easy as clicking the link above (Web UI) or running the command in a terminal:
 
 ```
 sudo snap install supercell
